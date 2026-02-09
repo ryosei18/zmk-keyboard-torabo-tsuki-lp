@@ -3,14 +3,7 @@
 #include <dt-bindings/zmk/input_transform.h>
 
 &trackball_listener {
-    /* 元からあった設定：物理的な向きの補正 */
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
-
-    /* 新しく追加する設定：レイヤー3でスクロールモードにする */
-    scroller {
-        layers = <3>;
-        input-processors = <&zip_scroll_scaler 2 1>;
-    };
 };
 
 &size_s_transform {
