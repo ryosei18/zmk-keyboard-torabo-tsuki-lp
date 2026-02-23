@@ -8,7 +8,7 @@
 
     scroller {
         layers = <3>; // レイヤー3が有効な時に適用
-        input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 1>;
+        input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 2 3>;
     };
 };
 
